@@ -1,0 +1,17 @@
+<%- | Hash $config | -%>
+# Chasquid configuration
+#
+# MANAGED BY PUPPET
+<%- $config.each |$key, $value| { -%>
+<%- if $value =~ Array[String] { -%>
+<%- $value.each |$v| { -%>
+<%= $ey %>: "<%= $v %>"
+<%- } -%>
+<%- } else { -%>
+  <%- if $value =~ String { -%>
+<%= $key %>: "<%= $value %>"
+  <%- } else { -%>
+<%= $key %>: <%= $value %>
+  <%- } -%>
+<%- } -%>
+<%- } -%>
