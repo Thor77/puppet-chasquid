@@ -5,7 +5,7 @@
 <%- $config.each |$key, $value| { -%>
 <%- if $value =~ Array[String] { -%>
 <%- $value.each |$v| { -%>
-<%= $ey %>: "<%= $v %>"
+<%= $key %>: "<%= $v %>"
 <%- } -%>
 <%- } else { -%>
   <%- if $value =~ String { -%>
