@@ -7,7 +7,7 @@
 # @param config_path [String] path to chasquid config file
 class chasquid (
   Hash $config,
-  Array $domains,
+  Hash $domains,
   String $package_name,
   String $package_version,
   String $service_name,
