@@ -5,4 +5,4 @@ chasquid::service_name: 'chasquid'
 chasquid::config_directory: '/etc/chasquid'
 chasquid::config_path: "%{chasquid::config_directory}/chasquid.conf"
 chasquid::config: {}
-chasquid::domains: []
+chasquid::domains: {}
