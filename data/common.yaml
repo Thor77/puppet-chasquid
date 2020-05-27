@@ -1,5 +1,5 @@
 ---
-chasquid::package_name: 'rainloop'
+chasquid::package_name: 'chasquid'
 chasquid::package_version: 'installed'
 chasquid::service_name: 'chasquid'
 chasquid::config_directory: '/etc/chasquid'
